@@ -62,31 +62,6 @@ document.querySelectorAll('.about-card, .portfolio-item').forEach(el => {
     observer.observe(el);
 });
 
-// Form submission - Enhanced mailto functionality
-document.querySelector('.contact-form').addEventListener('submit', function(e) {
-    const formData = new FormData(this);
-    const data = Object.fromEntries(formData);
-    
-    // Create email body
-    const emailBody = `Name: ${data.name}
-Email: ${data.email}
-Project Type: ${data.project_type}
-
-Message:
-${data.message}`;
-    
-    // Create mailto URL with subject and body
-    const mailtoUrl = `mailto:jakov@jandric.com?subject=Project Inquiry from ${data.name}&body=${encodeURIComponent(emailBody)}`;
-    
-    // Open email client
-    window.location.href = mailtoUrl;
-    
-    // Show confirmation
-    setTimeout(() => {
-        alert('Email client opened! If it didn\'t open automatically, please email jakov@jandric.com directly.');
-    }, 500);
-});
-
 // Add loading state to buttons
 document.querySelectorAll('.btn').forEach(btn => {
     btn.addEventListener('click', function() {
