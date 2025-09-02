@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glare Studios - Development & Entertainment</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="logo.png" alt="Glare Studios" class="logo">
+                <span class="logo-text">Glare Studios</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Creating Digital
+                    <span class="gradient-text">Experiences</span>
+                </h1>
+                <p class="hero-subtitle">
+                    We craft exceptional software, immersive video games, and engaging board games 
+                    that bring ideas to life and create lasting memories.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="btn btn-primary">View Our Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-logo-container">
+                    <img src="logo.png" alt="Glare Studios" class="hero-logo-main">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Glare Studios</h2>
+            <p class="section-subtitle">
+                We are a creative studio passionate about bringing innovative ideas to life through technology and design.
+            </p>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="card-icon">💻</div>
+                    <h3>Software Development</h3>
+                    <p>Custom applications, web platforms, and digital solutions tailored to your needs.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">🎮</div>
+                    <h3>Video Games</h3>
+                    <p>Immersive gaming experiences that captivate players and push creative boundaries.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">🎲</div>
+                    <h3>Board Games</h3>
+                    <p>Innovative tabletop experiences that bring people together for memorable moments.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">Featured Work</h2>
+            <div class="portfolio-grid">
+                <a href="https://jakovjj.github.io/fitprint" target="_blank" class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="fitprint-logo.png" alt="Fitprint" class="project-logo">
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Fitprint</h3>
+                        <p>Smart automatic image layout generation for optimized printing.</p>
+                        <span class="portfolio-tag">Software</span>
+                    </div>
+                </a>
+                <a href="https://mineward.net" target="_blank" class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="mineward-logo.png" alt="Mineward" class="project-logo">
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Mineward</h3>
+                        <p>Dungeon Crawler Minecraft Server for Java Edition with custom monsters, quests, gear and immersive gameplay.</p>
+                        <span class="portfolio-tag">Game</span>
+                    </div>
+                </a>
+                <a href="https://countryballcards.com" target="_blank" class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="countryball-cards-logo.png" alt="Countryball Cards" class="project-logo">
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Countryball Cards</h3>
+                        <p>A strategic card game featuring countryballs.</p>
+                        <span class="portfolio-tag">Board Game</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Create Together</h2>
+            <p class="section-subtitle">
+                Ready to bring your ideas to life? Get in touch and let's discuss your next project.
+            </p>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h3>Email</h3>
+                        <p>jakov@jandric.com</p>
+                    </div>
+                </div>
+                <form class="contact-form" action="mailto:jakov@jandric.com" method="post" enctype="text/plain">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <select name="project_type" required>
+                            <option value="">Project Type</option>
+                            <option value="software">Software Development</option>
+                            <option value="game">Video Game</option>
+                            <option value="board">Board Game</option>
+                            <option value="consulting">Consulting</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Tell us about your project" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="logo.png" alt="Glare Studios" class="logo">
+                    <span class="logo-text">Glare Studios</span>
+                </div>
+                <p>&copy; 2025 Glare Studios. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
